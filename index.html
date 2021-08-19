@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOXICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive Ecommerce Website</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-grid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bxs-grid"></i>
+                </div>
+                <a href="" class="nav__logo">Sether</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#featured" class="nav__link">Destacados</a></li>
+                        <li class="nav__item"><a href="#collection" class="nav__link">Marcas</a></li>
+                        <li class="nav__item"><a href="#test" class="nav__link">Test</a></li>
+                    </ul>
+                </div>
+                <div class="nav__shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__bass">
+                        <div class="home__shape"></div>
+                        <img src="assets/img/bass.png" alt="" class="home__img">
+                    </div>
+                    <div class="home__data">
+                        <span class="home__new">Nuevo</span>
+                        <h1 class="home__title">Bajo electrico<br>IBANEZ GSR206B-WNF</h1>
+                        <p class="home__description">Bajo eléctrico de 6 cuerdas <br>de la serie 
+                           Gio con cuerpo de caoba.<br>Color: Walnut flat.</p>
+                        <a href="#" class="button">Conocer más</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== FEATURED PRODUCTS =====-->
+            <section class="featured section" id="featured">
+                <h2 class="section-title">DESTACADOS</h2>
+                <div class="featured__container bd-grid">
+                    <article class="bass">
+                        <div class="bass__sale">Sale</div>
+                        <img src="assets/img/bass1.png" alt="" class="bass__img">
+                        <span class="bass__name">Fender SQ Bronco</span>
+                        <span class="bass__price">$845.500</span>
+                        <a href="" class="button-light">Agregar al carrito <i class="bx bx-right-arrow-alt button-icon"></i>
+                        </a>
+                    </article>
+                    <article class="bass">
+                        <div class="bass__sale">Sale</div>
+                        <img src="assets/img/bass2.png" alt="" class="bass__img">
+                        <span class="bass__name">Fender SQ AFF J</span>
+                        <span class="bass__price">$1.084.995</span>
+                        <a href="" class="button-light">Agregar al carrito <i class="bx bx-right-arrow-alt button-icon"></i>
+                        </a>
+                    </article>
+                    <article class="bass">
+                        <div class="bass__sale">Sale</div>
+                        <img src="assets/img/bass3.png" alt="" class="bass__img">
+                        <span class="bass__name">Fender SQ AFFINITY</span>
+                        <span class="bass__price">$1.263.500</span>
+                        <a href="" class="button-light">Agregar al carrito <i class="bx bx-right-arrow-alt button-icon"></i>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!--===== COLLECTION =====-->
+            <section class="collection section" id="collection">
+                <h2 class="section-title">MARCAS</h2>
+                <div class="collection__container bd-grid">
+                    <div class="collection__card">
+                        <div class="collection__data">
+                            <h3 class="colletion__name">Ibanez</h3>
+                            <p class="collection_description">SQ</p>
+                            <a href="" class="button-light">Comprar <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                        </div>
+                        <img src="assets/img/ibanez.png" alt="" class="collection__img">
+                    </div>
+                    <div class="collection__card">
+                        <div class="collection__data">
+                            <h3 class="colletion__name">Fender</h3>
+                            <p class="collection_description">SQ</p>
+                            <a href="" class="button-light">Comprar <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                        </div>
+                        <img src="assets/img/fender.png" alt="" class="collection__img">
+                    </div>
+                    <div class="collection__card">
+                        <div class="collection__data">
+                            <h3 class="colletion__name">Gibson</h3>
+                            <p class="collection_description">SQ</p>
+                            <a href="" class="button-light">Comprar <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                        </div>
+                        <img src="assets/img/gibson.png" alt="" class="collection__img">
+                    </div>
+                </div>
+            </section>
+            <!--===== TEST =====-->
+            <section class="test section" id="test">
+                <h2 class="section-title">Test</h2>
+                <div class="test__container bd-grid">
+                    <div class="neck">
+                        <div class="string stringE" onclick="jsNota(41.203)"></div>
+                        <div class="string stringA" onclick="jsNota(55)"></div>
+                        <div class="string stringD" onclick="jsNota(73.416)"></div>
+                        <div class="string stringG" onclick="jsNota(97.998)"></div>
+                        
+                        <div class="trastes">
+                            <div class="traste"></div>
+                            <div class="traste"></div>
+                            <div class="traste"></div>
+                            <div class="traste"></div>
+                            <div class="traste"></div>
+                            <div class="traste nodisplay"></div>
+                            <div class="traste nodisplay"></div>
+                            <div class="traste nodisplay"></div>
+                            <div class="traste nodisplay"></div>
+                        </div>
+                        <span class="fretMark fret1"></span>
+                        <span class="fretMark fret2"></span>
+                        <span class="fretMark fret3"></span>
+                        
+                    </div>
+                </div>
+            </section>
+            <!--===== NEWSLETTER =====-->
+            <section class="newsletter section" id="suscribe">
+                <div class="newsletter__container bd-grid">
+                    <div>
+                        <h3 class="newsletter__title">Subscríbete y obtén<br>10% de DESCUENTO</h3>
+                        <p class="newsletter__description">Obtenga un 10% de descuento <br>en todos los productos</p>
+                    </div>
+                    <form action="" class="newsletter__subscribe">
+                        <input type="text" placeholder="@gmail.com" class="newsletter__input">
+                        <a href="#" class="button">Subscribe</a>
+                    </form>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__box">
+                    <h3 class="footer__title">Sether</h3>
+                    <p class="footer__description">Nuevos instrumentos 2021</p>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__title">EXPLORAR</h3>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#featured" class="footer__link">Destacados</a></li>
+                        <li><a href="#collection" class="footer__link">Marcas</a></li>
+                        <li><a href="#test" class="footer__link">Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__title">PAGOS</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Tarjetas debito</a></li>
+                        <li><a href="#" class="footer__link">Tarjetas debito</a></li>
+                        <li><a href="#" class="footer__link">Nequi</a></li>
+                        <li><a href="#" class="footer__link">Daviplata</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <ul>
+                        <a href="#" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="footer__social"><i class="bx bxl-google"></i></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="gif bd-grid">
+                
+            </div>
+            <p class="footer__copy">&#169; 2021 JhonMos. Todos los derechos reservados</p>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
