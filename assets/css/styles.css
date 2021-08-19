@@ -439,7 +439,12 @@ img {
   }
 }
 
-/* ===== Instrument=====*/
+/* ===== Instrument=====*/  
+.test__description{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .neck{
   background: #d6ad66 url(../img/wood.png);
   position: relative;
